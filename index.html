@@ -27,14 +27,14 @@
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
   <!-- Preloader -->
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div class="lds-ellipsis">
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-  </div>
+  </div> -->
   <!-- Preloader End -->
 
   <!-- Document Wrapper   
@@ -54,7 +54,7 @@
           <!-- Logo -->
           <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png"
               alt="iDocs Template" width="100px" /> </a>
-          <span class="text-2 ml-2">v1.7</span>
+          <span class="text-2 ml-2">v2.4</span>
           <!-- Logo End -->
 
           <!-- Navbar Toggler -->
@@ -103,7 +103,7 @@
             </ul>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="#how_to">How To</a>
+          <li class="nav-item"><a class="nav-link active" href="#how_to">How To</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link text-capitalize" href="#add_currency">Add currrency</a></li>
               <li class="nav-item"><a class="nav-link text-capitalize" href="#add_language">Add language</a></li>
@@ -122,6 +122,8 @@
               <li class="nav-item"><a class="nav-link text-capitalize" href="#kithcen">kithcen</a></li>
               <li class="nav-item"><a class="nav-link text-capitalize" href="#deliverymen">deliverymen</a></li>
               <li class="nav-item"><a class="nav-link text-capitalize" href="#online_orders">online orders</a></li>
+              <li class="nav-item"><a class="nav-link text-capitalize" href="#google-recaptcha">google reCaptcha</a>
+              <li class="nav-item"><a class="nav-link text-capitalize" href="#template-settings">Template settings</a>
             </ul>
           </li>
 
@@ -142,6 +144,18 @@
               </li>
             </ul>
           </li>
+
+          <li class="nav-item"><a class="nav-link active" href="#payment">Online payment</a>
+            <ul class="nav flex-column">
+              <li><a class="nav-link text-capitalize" href="#payment">stripe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#twilio">Sms settings</a>
+            <ul class="nav flex-column">
+              <li><a class="nav-link text-capitalize" href="#twilio">Twilio</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div>
 
@@ -160,7 +174,7 @@
             <div class="row">
               <div class="col-sm-6 col-lg-4">
                 <ul class="list-unstyled">
-                  <li><strong>Version:</strong> 1.7</li>
+                  <li><strong>Version:</strong> 2.4</li>
                   <li><strong>Author:</strong> <a href="https://codecanyon.net/user/softtech-it/portfolio"
                       target="_blank">softtech-it</a>
                   </li>
@@ -169,7 +183,7 @@
               <div class="col-sm-6 col-lg-4">
                 <ul class="list-unstyled">
                   <li><strong class="font-weight-700">Created:</strong> 20 January 21</li>
-                  <li><strong>Update:</strong> 20 December 21</li>
+                  <li><strong>Update:</strong> 17 May 22</li>
                 </ul>
               </div>
             </div>
@@ -1013,9 +1027,34 @@
               <hr class="divider">
             </div>
 
+            <!-- google_recaptcha -->
+            <div id="google-recaptcha">
+              <h2>Google reCAPTCHA</h2>
+              <p>
+                Prevent fake users from your siteb with Google reCaptcha.
+                Get your site key and secret key from this link : https://www.google.com/recaptcha/admin/create .
+                Then follow the step below: <br>
 
+                1.Register your site with eCAPTCHA v2
+                <br>
+                2. dashboard->Manage->settings->Google reCAPTCHA<br>
+                3. fill up the details then hit the save button
+              </p>
 
+              <img src="./assets/images/demos/recaptcha.png" width="600" alt="">
+            </div>
 
+            <!-- google_recaptcha -->
+            <div id="template-settings">
+              <h2>Template settings</h2>
+              <p>
+                There are two templates available for this application. You can always switch between two template and
+                change all the landing page content easily.
+                To change settings go to dashboard->Template. You will find all the template settings necessary
+              </p>
+
+              <img src="./assets/images/demos/recaptcha.png" width="600" alt="">
+            </div>
           </section>
 
           <section id="manage_stocks">
@@ -1166,7 +1205,31 @@
               </div>
               <hr class="divider">
             </div>
+          </section>
 
+          <section id="payment">
+            <h2>Stripe payment</h2>
+            <p>
+              Get your stripe client id and stripe secret key from your stripe dashboard.
+              Then follow the step below: <br>
+              1. dashboard->Manage->payment->stripe<br>
+              2. fill up the details then hit setup button
+            </p>
+
+            <img src="./assets/images/demos/stripe.png" width="600" alt="">
+          </section>
+
+          <section id="twilio">
+            <h2>Twilio</h2>
+            <p>
+              Twilio is used for sms authintication for real users while registering new users.
+              Get your Twilio client id and secret key and registered number from your Twilio dashboard.
+              Then follow the step below: <br>
+              1. dashboard->Manage->sms settings->Twilio<br>
+              2. fill up the details then hit the save button
+            </p>
+
+            <img src="./assets/images/demos/twilio.png" width="600" alt="">
           </section>
         </div>
       </div>
